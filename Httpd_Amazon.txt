@@ -1,0 +1,17 @@
+#------------For this project-----------
+#First Clone the repo-------------------
+#git clone https://github.com/sparshmundai/Amazon_Clone_Project.git
+
+#Then,Run this Dockerfile
+
+#Useing an official httpd:latest runtime server as the base image
+FROM httpd:latest
+
+#Setting the working directory for the container
+WORKDIR /usr/local/apache2/htdocs/
+
+#Copy all the application code to the container working directory
+COPY Amazon_Clone_Project/. .
+
+#Expose the port on which the application run
+EXPOSE 80

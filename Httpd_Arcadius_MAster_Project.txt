@@ -1,0 +1,18 @@
+#------------For this project-----------
+#First Clone the repo-------------------
+#git clone https://github.com/sparshmundai/Arcadius_Master_Project.git
+
+#Then,Run this Dockerfile
+
+#This is the Working Directory for the httpd- /usr/local/apache2/htdocs/
+#Useing an official httpd:latest runtime server as the base image
+FROM httpd:latest
+
+#Setting the working directory for the container
+WORKDIR /usr/local/apache2/htdocs/
+
+#Copy all the application code to the container working directory
+COPY Arcadius_Master_Project/. .
+
+#Expose the port on which the application run
+EXPOSE 80

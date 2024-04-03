@@ -1,0 +1,23 @@
+#------------For this project-----------
+#First Clone the repo-------------------
+#git clone https://github.com/sparshmundai/NodeApplication.git 
+
+#Then,Run this Dockerfile
+
+#Using an official node:latest runtime server as the base image
+FROM node:latest
+
+#Setting the working directory for the container
+WORKDIR /testing
+
+#Copy all the application code to the container working directory
+COPY NodeApplication/. .
+
+#Installing the dependencies
+RUN npm install
+
+#Expose the port on which the application run
+EXPOSE 3000
+
+#Command to run the Node Js Application
+CMD ["npm","start"]

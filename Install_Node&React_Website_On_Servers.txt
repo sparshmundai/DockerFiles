@@ -1,0 +1,12 @@
+1) sudo su -
+2) yum update -y
+3) curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+4)  Need to activate nvm by using the command   . ~/.nvm/nvm.sh
+5) By using nvm you have to install Node.js command :-  nvm install 16 or nvm install version 16,18, 
+6) nvm --version check version  node -v 
+7) install git command :- yum install git -y
+8) git clone <repository-url>
+9) cd <repository> npm install
+10) npm run build
+11) cd root then  yum install httpd
+12) systemctl status
